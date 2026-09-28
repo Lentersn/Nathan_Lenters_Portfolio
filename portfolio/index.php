@@ -9,6 +9,8 @@
 
 <body>
 
+    <?php include 'nav.php'; ?>
+    
     <main>
 
         <section class="intro">
@@ -44,5 +46,4 @@
     </main>
 
 </body>
-<?php include 'nav.php'; ?>
 </html>
