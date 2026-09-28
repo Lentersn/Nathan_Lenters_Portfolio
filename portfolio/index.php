@@ -9,8 +9,6 @@
 
 <body>
 
-    <?php include 'nav.php'; ?>
-
     <main>
 
         <section class="intro">
