@@ -39,7 +39,6 @@
                 continue developing my programming and technical skills.
             </p>
 
-            <a href="about.php">Learn More About Me</a>
         </section>
 
     </main>
