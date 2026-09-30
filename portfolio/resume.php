@@ -3,36 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Nathan Lenters</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Resume | Nathan Lenters</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <?php include 'nav.php'; ?>
+<?php include 'nav.php'; ?>
 
-    <main>
+<main class="container">
+    <section class="page-header">
         <h1>Resume</h1>
+        <p>Experience, education, skills, and a downloadable copy of my resume.</p>
 
-        <p>
-            Below is my current resume. You can view it directly
-            on this page or download a PDF copy.
-        </p>
-
-        <a href="documents/Lenters_Nate_Resume.pdf" download class="download-button">
-            Download Resume
-        </a>
-
-        <div class="resume-container">
-            <iframe
-                src="documents/Lenters_Nate_Resume.pdf"
-                width="100%"
-                height="1000px"
-                title="Nathan Lenters Resume">
-            </iframe>
+        <div class="buttons">
+            <a class="button primary" href="documents/resume.pdf" download>Download Resume</a>
         </div>
+    </section>
 
-    </main>
+    <section class="section">
+        <iframe
+            class="resume-frame"
+            src="documents/resume.pdf"
+            title="Nathan Lenters Resume">
+        </iframe>
+    </section>
+</main>
+
+<?php include 'footer.php'; ?>
 
 </body>
 </html>
