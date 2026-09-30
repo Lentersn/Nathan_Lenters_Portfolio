@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<<<<<<< HEAD
 <?php include 'nav.php'; ?>
 
 <main class="container">
@@ -140,23 +139,6 @@
 </main>
 
 <?php include 'footer.php'; ?>
-=======
-    <?php include 'nav.php'; ?>
-    
-    <main>
-
-        <section class="intro">
-            <h1>Nathan Lenters</h1>
-            <h2>Computer Science Graduate</h2>
-
-            <p>
-                Welcome to my portfolio. I'm a Computer Science graduate
-                from Grand Valley State University interested in software
-                development, IT, and technology.
-            </p>
-            
-    </main>
->>>>>>> parent of 090ca58 (changed layout)
 
 </body>
 </html>
