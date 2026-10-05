@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-color: #0d1117;
     background-image:
-        linear-gradient(rgba(13, 17, 23, 0.55), rgba(13, 17, 23, 0.55)),
+        linear-gradient(rgba(13, 17, 23, 0.35), rgba(13, 17, 23, 0.55)),
         url("../images/Cherry_Blossom_Background.jpg");
     background-size: cover;
     background-position: center;
@@ -41,10 +41,18 @@ main {
 .intro {
     text-align: center;
     margin-bottom: 60px;
+    background: rgba(13, 17, 23, 0.78);
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .about-preview {
     margin-bottom: 40px;
+    background: rgba(13, 17, 23, 0.78);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .download-button {
