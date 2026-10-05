@@ -3,7 +3,7 @@ body {
     background-color: #0d1117;
     background-image:
         linear-gradient(rgba(13, 17, 23, 0.55), rgba(13, 17, 23, 0.55)),
-        url("images/Cherry_Blossom_Background.jpg");
+        url("../images/Cherry_Blossom_Background.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -73,7 +73,7 @@ main {
     }
 }
 
-#fix vertical scrunch of buttons on mobile
+/* Fix vertical scrunch of buttons on mobile */
 @media (max-width: 600px) {
     .nav-inner {
         flex-direction: column;
