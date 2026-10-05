@@ -1,7 +1,15 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0d1117;
+    background-image:
+        linear-gradient(rgba(13, 17, 23, 0.55), rgba(13, 17, 23, 0.55)),
+        url("images/Cherry_Blossom_Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: var(--text);
+    line-height: 1.7;
 }
 
 nav {
@@ -63,20 +71,6 @@ main {
     nav a {
         padding: 8px 12px;
     }
-}
-
-body {
-    margin: 0;
-    background-color: #0d1117;
-    background-image:
-        linear-gradient(rgba(13, 17, 23, 0.55), rgba(13, 17, 23, 0.55)),
-        url("images/Cherry_Blossom_Background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: var(--text);
-    line-height: 1.7;
 }
 
 #fix vertical scrunch of buttons on mobile
