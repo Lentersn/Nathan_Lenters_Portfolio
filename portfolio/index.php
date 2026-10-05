@@ -27,12 +27,13 @@
                 University interested in software development, IT,
                 programming, and technology.
             </p>
+            <p>
+                I graduated from Grand Valley State University with a
+                Bachelor of Science in Computer Science. Throughout my
+                education and work experience, I've worked with languages
+                including Python, Java, C, and JavaScript.
+            </p>
 
-            <div class="hero-actions">
-                <a class="button" href="projects.php">View Projects</a>
-                <a class="button secondary" href="resume.php">View Resume</a>
-                <a class="button secondary" href="contact.php">Contact Me</a>
-            </div>
 
         </div>
     </section>
@@ -49,8 +50,13 @@
                 includes programming, IT support, artificial intelligence,
                 web scraping, data mining, and software development.
             </p>
+            <p>
+                I've worked on projects involving artificial intelligence,
+                web scraping, data mining, game development, and IT support.
+                I'm particularly interested in opportunities where I can
+                continue developing my programming and technical skills.
+            </p>
 
-            <a class="button" href="about.php">Learn More About Me</a>
         </div>
     </section>
 
