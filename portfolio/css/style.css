@@ -1,14 +1,20 @@
 body {
     margin: 0;
-    background-color: #0d1117;
+    min-height: 100vh;
+
     background-image:
-        linear-gradient(rgba(13, 17, 23, 0.35), rgba(13, 17, 23, 0.55)),
+        linear-gradient(
+            rgba(5, 10, 18, 0.35),
+            rgba(5, 10, 18, 0.35)
+        ),
         url("../images/Cherry_Blossom_Background.jpg");
+
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: var(--text);
+
+    color: white;
     line-height: 1.7;
 }
 
@@ -18,7 +24,7 @@ nav {
     gap: 10px;
     padding: 15px 20px;
 
-    background: rgba(10, 14, 20, 0.90);
+    background: rgba(5, 10, 18, 0.90);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -38,15 +44,15 @@ nav a:hover {
 main {
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .intro {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 
-    background: rgba(10, 14, 20, 0.92);
-    padding: 40px 30px;
+    background: rgba(5, 10, 18, 0.90);
+    padding: 40px 35px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.15);
 
@@ -56,8 +62,8 @@ main {
 .about-preview {
     margin-bottom: 40px;
 
-    background: rgba(10, 14, 20, 0.92);
-    padding: 35px 30px;
+    background: rgba(5, 10, 18, 0.90);
+    padding: 35px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.15);
 
