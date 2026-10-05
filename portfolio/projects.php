@@ -64,9 +64,15 @@
             <h2>Project 3: AI Galaga</h2>
 
             <p>
-                Description of the AI Galaga project. This project involved
-                creating an AI opponent for the classic arcade game Galaga,
-                using machine learning techniques to improve its gameplay.
+                Created a retro-style Galaga game using Python and Pygame. The project
+                included gameplay mechanics, enemies, player controls, menus,
+                statistics, and achievements while recreating the style of the
+                classic arcade game.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                Python, Pygame
             </p>
 
 
@@ -77,13 +83,50 @@
                 creating a responsive website to showcase my portfolio and skills.
             </p>
 
-
-            <h2>Project 5: JavaScript Pokedex</h2>
+            <h2>Project 5: Memory Matching Game</h2>
 
             <p>
-                Description of the JavaScript Pokedex project. This project involved
-                creating a web application that allows users to browse and search
-                for information about different Pokémon using the PokéAPI.
+                Worked collaboratively on an Android memory matching game developed
+                using Kotlin. The project includes multiple screens for playing the
+                game, changing settings, and viewing game statistics. The application
+                was developed as a mobile application with a focus on interactive
+                gameplay and user experience.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                Kotlin, Android, Android Studio
+            </p>
+
+
+            <h2>Project 6: Crocs Swim Log</h2>
+
+            <p>
+                Worked collaboratively on Crocs Swim Log, an Android application
+                designed to help swimmers of all skill levels track their workouts
+                and discover new swimming drills. The application includes a home
+                dashboard displaying workout averages, a swim log, a workout entry
+                form, photo support through the device camera, and a Drill of the Day
+                feature that randomly selects from available swimming drills.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                Kotlin, Android, Android Studio, Camera
+            </p>
+
+
+            <h2>Project 7: JavaScript Pokédex</h2>
+
+            <p>
+                Created a JavaScript-based Pokédex application for browsing and
+                searching for Pokémon information. The project uses JavaScript to
+                provide an interactive way for users to explore Pokémon data.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                JavaScript
             </p>
 
         </div>
