@@ -1,4 +1,3 @@
-/* Basic page setup */
 * {
     box-sizing: border-box;
 }
@@ -17,39 +16,25 @@ body {
     background: transparent;
 }
 
-
-/* Cherry blossom background */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
     z-index: -1;
-
-    background-image:
-        linear-gradient(
-            rgba(5, 10, 18, 0.35),
-            rgba(5, 10, 18, 0.35)
-        ),
-        url("../images/Cherry_Blossom_Background.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background:
+        linear-gradient(rgba(5, 10, 18, 0.35), rgba(5, 10, 18, 0.35)),
+        url("../images/Cherry_Blossom_Background.jpg") center / cover no-repeat;
 }
 
-
-/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-
+    flex-wrap: wrap;
+    gap: 12px;
     padding: 15px 30px;
-
     background: rgba(5, 10, 18, 0.92);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-
     position: sticky;
     top: 0;
     z-index: 100;
@@ -57,7 +42,6 @@ nav {
 
 nav h1 {
     margin: 0;
-    color: white;
     font-size: 1.4rem;
 }
 
@@ -65,117 +49,102 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 9px 18px;
-
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 6px;
-
-    transition: 0.2s ease;
 }
 
 nav a:hover {
-    background-color: white;
+    background: white;
     color: black;
 }
 
-
-/* Main page area */
 main {
     max-width: 900px;
     margin: 0 auto;
     padding: 60px 20px;
 }
 
-
-/* Hero section */
 .hero {
     display: grid;
     gap: 25px;
     padding: 40px 0;
 }
 
-.hero-content {
-    max-width: 900px;
-
+.hero-content,
+.hero-summary,
+.card,
+.page-header,
+.page-content,
+.contact-card > div {
     background: rgba(5, 10, 18, 0.90);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
-
-    padding: 40px 35px;
     color: white;
+}
+
+.hero-content {
+    padding: 40px 35px;
 }
 
 .hero-content h2 {
     margin: 0;
-    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-size: clamp(2.1rem, 6vw, 4rem);
     line-height: 1.15;
 }
 
-.hero-content p {
+.hero-content p,
+.page-header p,
+.card p,
+.card li,
+.hero-summary p {
     color: #d5dce5;
-    font-size: 1.05rem;
-    margin: 20px 0;
 }
 
+.hero-content p {
+    margin: 20px 0;
+    font-size: 1.05rem;
+}
 
-/* Hero information box */
 .hero-summary {
-    background: rgba(5, 10, 18, 0.90);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-
-    padding: 25px 30px;
-
     display: grid;
     gap: 10px;
+    padding: 25px 30px;
 }
 
 .hero-summary p {
     margin: 0;
-    color: #d5dce5;
 }
 
-
-/* Buttons */
-.hero-actions {
+.hero-actions,
+.stack {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
-.button {
+.button,
+.download-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     padding: 12px 22px;
-
     border-radius: 999px;
-    border: 1px solid transparent;
-
-    text-decoration: none;
-    color: white;
     background: #4f8cff;
-
-    transition: 0.2s ease;
+    color: white;
+    text-decoration: none;
 }
 
-.button:hover {
+.button:hover,
+.download-button:hover {
     background: #6a9fff;
-    transform: translateY(-1px);
 }
 
 .button.secondary {
     background: transparent;
-    border-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.button.secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-
-/* Page sections */
 .section {
     margin-top: 60px;
 }
@@ -185,19 +154,15 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-
     margin-bottom: 20px;
-
+    padding: 15px 20px;
     background: rgba(5, 10, 18, 0.90);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 15px;
-
-    padding: 15px 20px;
 }
 
 .section-title h3 {
     margin: 0;
-    color: white;
     font-size: 1.5rem;
 }
 
@@ -205,166 +170,89 @@ main {
     color: #b7c5d6;
 }
 
-
-/* Content cards */
 .card {
-    background: rgba(5, 10, 18, 0.90);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-
     padding: 30px;
-
-    color: white;
-}
-
-/* Page content boxes */
-.page-header {
-    background: rgba(5, 10, 18, 0.90);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.page-header h1 {
-    margin-top: 0;
-    color: white;
-}
-
-.page-header p {
-    color: #d5dce5;
-}
-
-.page-content {
-    background: rgba(5, 10, 18, 0.90);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 30px;
 }
 
 .card h4 {
     margin-top: 0;
-    margin-bottom: 15px;
-    color: white;
     font-size: 1.2rem;
-}
-
-.card p,
-.card li {
-    color: #d5dce5;
 }
 
 .card ul {
     padding-left: 20px;
 }
 
+.page-header,
+.page-content {
+    padding: 30px;
+    margin-bottom: 30px;
+}
 
-/* Project layout */
+.page-header h1 {
+    margin-top: 0;
+}
+
 .grid {
     display: grid;
     gap: 20px;
 }
 
 .projects {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .project-card {
     min-height: 300px;
 }
 
-
-/* Technology tags */
 .stack {
-    display: flex;
-    flex-wrap: wrap;
     gap: 10px;
-    margin-top: 20px;
 }
 
 .stack span {
+    padding: 7px 13px;
+    border-radius: 999px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.15);
-
-    padding: 7px 13px;
-
-    border-radius: 999px;
-
-    color: white;
     font-size: 0.9rem;
 }
 
-
-/* Resume layout */
 .resume-grid {
     grid-template-columns: 1.5fr 1fr;
 }
 
-
-/* Contact section */
 .contact-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
 }
 
 .contact-card > div {
-    background: rgba(5, 10, 18, 0.90);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-
     padding: 30px;
 }
 
-
-/* Resume download button */
 .download-button {
-    display: inline-block;
-
-    padding: 12px 22px;
     margin: 20px 0;
-
-    background: #4f8cff;
-    color: white;
-
-    text-decoration: none;
-    border-radius: 999px;
 }
 
-.download-button:hover {
-    background: #6a9fff;
-}
-
-
-/* Footer */
 footer {
     margin-top: 60px;
     padding: 30px 20px;
-
     text-align: center;
-
     color: #c0ccda;
     background: rgba(5, 10, 18, 0.85);
     border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-
-/* Tablet layout */
 @media (max-width: 840px) {
-
     nav {
-        flex-direction: column;
         justify-content: center;
         text-align: center;
     }
 
-    nav h1 {
-        margin-bottom: 5px;
-    }
-
     .projects {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .resume-grid,
@@ -373,17 +261,14 @@ footer {
     }
 }
 
-
-/* Phone layout */
 @media (max-width: 600px) {
-
     main {
         padding: 35px 15px;
     }
 
     nav {
+        flex-direction: column;
         padding: 15px 10px;
-        gap: 12px;
     }
 
     nav a {
@@ -391,26 +276,21 @@ footer {
         font-size: 0.9rem;
     }
 
-    .hero {
-        padding: 25px 0;
-    }
-
-    .hero-content {
-        padding: 30px 22px;
-    }
-
-    .hero-content h2 {
-        font-size: 2.5rem;
+    .hero-content,
+    .hero-summary,
+    .page-header,
+    .page-content,
+    .card,
+    .contact-card > div {
+        padding: 25px 20px;
     }
 
     .hero-actions {
         flex-direction: column;
-        align-items: stretch;
     }
 
     .hero-actions .button {
         width: 100%;
-        text-align: center;
     }
 
     .projects {
@@ -418,38 +298,8 @@ footer {
     }
 
     .section-title {
-        display: block;
-    }
-
-    .section-title span {
-        display: block;
-        margin-top: 5px;
-    }
-
-    .card {
-        padding: 25px 20px;
-    }
-
-    .contact-card {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* Small phone layout */
-@media (max-width: 400px) {
-
-    nav a {
-        padding: 7px 10px;
-        font-size: 0.85rem;
-    }
-
-    .hero-content h2 {
-        font-size: 2.1rem;
-    }
-
-    .hero-content,
-    .hero-summary {
-        padding: 25px 18px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
     }
 }
