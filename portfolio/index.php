@@ -27,12 +27,6 @@
                 University interested in software development, IT,
                 programming, and technology.
             </p>
-            <p>
-                I graduated from Grand Valley State University with a
-                Bachelor of Science in Computer Science. Throughout my
-                education and work experience, I've worked with languages
-                including Python, Java, C, and JavaScript.
-            </p>
 
 
         </div>
@@ -45,18 +39,20 @@
 
         <div class="card">
             <p>
-                I graduated from Grand Valley State University with a
-                Bachelor of Science in Computer Science. My experience
-                includes programming, IT support, artificial intelligence,
-                web scraping, data mining, and software development.
+                My background spans software development, artificial
+                intelligence, data mining, and IT support. I have
+                experience with Python, Java, C, and JavaScript, along
+                with hands-on experience troubleshooting hardware and
+                software issues.
             </p>
             <p>
-                I've worked on projects involving artificial intelligence,
-                web scraping, data mining, game development, and IT support.
-                I'm particularly interested in opportunities where I can
-                continue developing my programming and technical skills.
+                My projects include developing web crawlers to collect
+                documentation for an AI-powered knowledge base, building
+                data mining algorithms, and creating games. I enjoy
+                learning new technologies, tackling challenging problems,
+                and developing practical solutions that make technology
+                more useful.
             </p>
-
         </div>
     </section>
 
